@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>Canvas exercises</title>
+  </head>
+  <body>
+    <div id="stage">
+      <canvas id="background-layer" width="500" height="500"></canvas>
+      <canvas id="game-layer" width="500" height="500"></canvas>
+    </div>
+
+    <style>
+      #stage {
+        position: relative;
+        border: 2px solid black;
+        width: 500px;
+        height: 500px;
+      }
+
+      canvas {
+        position: absolute;
+      }
+
+      #background-layer {
+        z-index: 0;
+      }
+      #game-layer {
+        z-index: 1;
+      }
+    </style>
+
+    <script src="./src/index.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+  </body>
+</html>
