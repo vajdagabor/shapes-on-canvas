@@ -123,8 +123,6 @@ class Triangle {
   }
 
   draw(ctx, posX, posY) {
-    this.showGuides && this.drawGuides(ctx, posX, posY);
-
     let {a, b, c} = this.trianglePoints(posX, posY, this.radius, this.angle);
 
     ctx.lineWidth = this.lineWidth;
@@ -146,6 +144,7 @@ class Triangle {
 
   render(ctx, posX, posY) {
     this.draw(ctx, posX, posY);
+    this.showGuides && this.drawGuides(ctx, posX, posY);
     this.update();
   }
 }
