@@ -154,9 +154,9 @@ bgLayer.addObject(new Grid({}), 0, 0);
 bgLayer.render();
 
 fgLayer = new Layer('#game-layer', true);
-fgLayer.addObject(new Triangle({radius: 200, angle: 0, rotationSpeed: 0.25, showGuides: true }), 250, 250);
-fgLayer.addObject(new Triangle({radius: 100, angle: 180, rotationSpeed: -1 }), 250, 250);
-fgLayer.addObject(new Triangle({radius: 50, angle: 0, rotationSpeed:  1 }), 250, 250);
+fgLayer.addObject(new Triangle({radius: 200, angle: 0, rotationSpeed: 0.25 }), 250, 250);
+fgLayer.addObject(new Triangle({radius: 100, angle: 180, rotationSpeed: -1, showGuides: true }), 250, 250);
+fgLayer.addObject(new Triangle({radius: 50, angle: 0, rotationSpeed:  1}), 250, 250);
 fgLayer.addObject(new Triangle({radius: 25, angle: 180, rotationSpeed: -2 }), 250, 250);
 fgLayer.addObject(new Triangle({radius: 12.5, angle: 0, rotationSpeed: 3 }), 250, 250);
 fgLayer.render();
